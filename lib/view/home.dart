@@ -25,16 +25,15 @@ class _MyHomePageState extends State<MyHomePage> {
     ];
 
     return Scaffold(
-      backgroundColor: Colors.grey[100],
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text("Reorder List"),
+        title: Text("Cureved Navigation"),
         centerTitle: true,
       ),
       body: screens[index],
       bottomNavigationBar: CurvedNavigationBar(
-        buttonBackgroundColor: Colors.amber,
-        color: Colors.purple,
-        backgroundColor: Colors.green,
+        color: Colors.red,
+        backgroundColor: Colors.white,
         height: 60,
         index: index,
         items: const [
@@ -43,8 +42,16 @@ class _MyHomePageState extends State<MyHomePage> {
             size: 30,
             color: Colors.white,
           ),
-          Icon(Icons.favorite),
-          Icon(Icons.settings)
+          Icon(
+            Icons.favorite,
+            size: 30,
+            color: Colors.white,
+          ),
+          Icon(
+            Icons.settings,
+            size: 30,
+            color: Colors.white,
+          )
         ],
         key: _bottomNavigationKey,
         onTap: (index) => setState(() {
