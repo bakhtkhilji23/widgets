@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:widgets/widgets/curved_navigation.dart';
+import 'package:widgets/widgets/spinkit_splash.dart';
 
 void main() {
   runApp(const MyApp());

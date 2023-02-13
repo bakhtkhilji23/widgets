@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:widgets/utils/colors.dart';
 import 'package:widgets/view/home.dart';
 import 'package:widgets/widgets/reorderable_listview.dart';
+import 'package:widgets/widgets/spinkit_splash.dart';
 
 class CurveNavigationWidget extends StatefulWidget {
   const CurveNavigationWidget({super.key});
@@ -19,9 +20,7 @@ class _CurveNavigationWidgetState extends State<CurveNavigationWidget> {
   Widget build(BuildContext context) {
     List<Widget> screens = const [
       MyHomePage(),
-      Center(
-        child: Text("Favourite"),
-      ),
+      SpinkitSplashWidget(),
       Center(
         child: Text("Setting"),
       ),
@@ -37,7 +36,7 @@ class _CurveNavigationWidgetState extends State<CurveNavigationWidget> {
       bottomNavigationBar: CurvedNavigationBar(
         color: pinkColor,
         backgroundColor: Colors.white,
-        height: 60,
+        height: 70,
         index: index,
         items: const [
           Icon(
