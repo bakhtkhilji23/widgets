@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widgets/view/home.dart';
+import 'package:widgets/widgets/curved_navigation.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Widgets App',
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.pink,
       ),
-      home: const MyHomePage(),
+      home: const CurveNavigationWidget(),
     );
   }
 }
